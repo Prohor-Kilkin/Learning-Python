@@ -865,6 +865,69 @@
 
 # ======================15.08=========================
 
-print('hello')
-print('hello git')
-print("hello clone")
+# print('hello')
+# print('hello git')
+# print("hello clone")
+
+# ======================17.08==============
+
+
+#  Файлы
+
+# f = open('D:\\Обучение\PYTHON DZ\\test.txt')
+# print(*f)
+
+
+# f = open('text.txt', 'r')
+# print(f.readline())
+# print(f.readline(8))
+# print(f.readline())
+# f.close()
+
+# f = open('text.txt', 'r')
+# print(f.readlines())
+# f.close()
+
+# f = open('text.txt', 'r')
+# for line in f:
+# 	print(line)
+# f.close()
+
+# f = open('xyz.txt', 'w')
+# f.write('hello\nWorld')
+# f.close()
+
+
+# f = open('xyz.txt', 'a')
+# list = [str(i) for i in range(1, 20)]
+# print(list)
+# for index in list:
+# 	f.write(index)
+# f.close()
+#
+# f = open('test.txt')
+# print(f.read(3))
+# print(f.tell()) # на какой позиции курсор
+# print(f.seek(1)) # перемещает курсор в заданную позицию
+# print(f.read())
+# print(f.tell())
+# f.close()
+
+
+# with open('test.txt', 'w+') as f:
+# 	print(f.write('0123456789'))
+#
+# with open('test.txt', 'r+') as f:
+# 	print(f.read())
+
+
+def longest_word(file):
+	with open(file, 'r') as text:
+		w = text.read().split()
+		print(w)
+		max_length = max(w)
+
+
+
+print(longest_word('file.txt'))
+

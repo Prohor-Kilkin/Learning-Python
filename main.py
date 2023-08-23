@@ -884,9 +884,9 @@
 # print(f.readline())
 # f.close()
 
-# f = open('text.txt', 'r')
-# print(f.readlines())
-# f.close()
+f = open('text.txt', 'r')
+print(f.readlines())
+f.close()
 
 # f = open('text.txt', 'r')
 # for line in f:
@@ -921,13 +921,13 @@
 # 	print(f.read())
 
 
-def longest_word(file):
-	with open(file, 'r') as text:
-		w = text.read().split()
-		print(w)
-		max_length = max(w)
-
-
-
-print(longest_word('file.txt'))
+# def longest_word(file):
+# 	with open(file, 'r') as text:
+# 		w = text.read().split()
+# 		print(w)
+# 		max_length = max(w)
+#
+#
+#
+# print(longest_word('file.txt'))
 

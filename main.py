@@ -3044,7 +3044,7 @@ import re
 # remove_empty_dirs('nested1')
 
 
-import os.path
+# import os.path
 
 
 # print(os.path.split(r'D:\Python327\nested1\nested2\nested3\two.txt'))  # разбивает путь на кортежи (путь,
@@ -3251,47 +3251,47 @@ import os.path
 # # Point.set_coord(p2, 20, 70)
 # print(p2.__dict__)
 
-class Human:
-    name = "name"
-    birthday = "00.00.0000"
-    phone = "00-00-00"
-    country = "country"
-    city = "city"
-    address = "street, house"
-
-    def print_info(self):
-        print(" Персональные данные ".center(40, "*"))
-        print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}"
-              f"\nСтрана: {self.country}\nГород: {self.city}\nДомашний адрес: {self.address}")
-        print("=" * 40)
-
-    def input_info(self, first_name, birthday, phone, country, city, address):
-        self.address = address
-        self.name = first_name
-        self.birthday = birthday
-        self.phone = phone
-        self.country = country
-        self.city = city
-
-    def set_city(self, value):  # установить
-        self.city = value
-
-    def get_city(self):  # получить
-        return self.city
-
-    def set_name(self, value):
-        self.name = value
-
-    def get_name(self):
-        return self.name
-
-
-h1 = Human()
-h1.print_info()
-h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва", "Чистопрудный бульвар, 1A")
-h1.print_info()
-h1.set_city("Владимир")
-print(h1.get_city())
-h1.set_name("Валентина")
-print(h1.get_name())
+# class Human:
+#     name = "name"
+#     birthday = "00.00.0000"
+#     phone = "00-00-00"
+#     country = "country"
+#     city = "city"
+#     address = "street, house"
+#
+#     def print_info(self):
+#         print(" Персональные данные ".center(40, "*"))
+#         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}"
+#               f"\nСтрана: {self.country}\nГород: {self.city}\nДомашний адрес: {self.address}")
+#         print("=" * 40)
+#
+#     def input_info(self, first_name, birthday, phone, country, city, address):
+#         self.address = address
+#         self.name = first_name
+#         self.birthday = birthday
+#         self.phone = phone
+#         self.country = country
+#         self.city = city
+#
+#     def set_city(self, value):  # установить
+#         self.city = value
+#
+#     def get_city(self):  # получить
+#         return self.city
+#
+#     def set_name(self, value):
+#         self.name = value
+#
+#     def get_name(self):
+#         return self.name
+#
+#
+# h1 = Human()
+# h1.print_info()
+# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва", "Чистопрудный бульвар, 1A")
+# h1.print_info()
+# h1.set_city("Владимир")
+# print(h1.get_city())
+# h1.set_name("Валентина")
+# print(h1.get_name())
 

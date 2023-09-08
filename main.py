@@ -2676,6 +2676,7 @@
 
 import re
 
+
 # s = "05-03-1987 # Дата рождения"
 # print("Дата рождения:", re.sub('#.*', '', s))
 # # Дата рождения: 05.03.1987
@@ -3295,3 +3296,46 @@ import re
 # h1.set_name("Валентина")
 # print(h1.get_name())
 
+# class Person:
+#     def __init__(self, name, age):
+#         self.__name = name
+#         self.__age = age
+#
+#     @property
+#     def age(self):
+#         return self.__age
+#
+#     @age.setter
+#     def age(self, value):
+#         self.__age = value
+#
+#     @age.deleter
+#     def age(self):
+#         del self.__name
+#
+#
+# p1 = Person("Vasya", 30)
+# print(p1.__dict__)
+# p1.name = "Igor"
+# print(p1.name)
+# del p1.name
+# print(p1.__dict__)
+
+
+# class Point:
+#
+#     def __init__(self, x, y):
+#         self.__x = x
+#         self.__y = y
+#
+#
+# class Line:
+#
+#     def __init__(self, sp, ep, color, width):
+#         self._sp = sp
+#         self._ep = ep
+#         self.colot = color
+#         self.width = width
+#
+#     def draw_line(self):
+#     print(f"drawing:{self._sp},")

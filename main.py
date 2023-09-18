@@ -4031,20 +4031,20 @@ import os.path
 #         else:
 #             raise ValueError("Ширина должна быть положительным числом")
 
-property
-def height(self):
-    return self.__height
-
-@height.setter
-def height(self, h):
-    if h > 0:
-        self.__height = h
-    else:
-        raise ValueError("Ширина должна быть положительным числом")
-
-def area(self):
-    print(f"Площадь {self.color} прямоугольника:", end=" ")
-    return self.__width * self.__height
+# property
+# def height(self):
+#     return self.__height
+#
+# @height.setter
+# def height(self, h):
+#     if h > 0:
+#         self.__height = h
+#     else:
+#         raise ValueError("Ширина должна быть положительным числом")
+#
+# def area(self):
+#     print(f"Площадь {self.color} прямоугольника:", end=" ")
+#     return self.__width * self.__height
         # return self.width * self.height
 
 

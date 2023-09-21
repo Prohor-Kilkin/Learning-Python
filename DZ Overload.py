@@ -73,6 +73,9 @@ c7 = c1 % c2
 c8 -= c1 - c2
 c9 *= c1 * c2
 c10 //= c1 // c2
+c11 = c1.get_format_time()
+c12 = c2.get_format_time()
+
 print(c1.get_format_time())
 print(c2.get_format_time())
 print("c1 + c2: ", c3.get_format_time())
@@ -85,8 +88,9 @@ print("c1 *= c2: ", c9.get_format_time())
 print("c1 //= c2: ", c10.get_format_time())
 
 
-print(c1.get_format_time() > c2.get_format_time())
-print(c1.get_format_time() >= c2.get_format_time())
-print(c1.get_format_time() < c2.get_format_time())
-print(c1.get_format_time() <= c2.get_format_time())
+print(c11 > c12)
+print(c11 >= c12)
+print(c11 < c12)
+print(c11 <= c12)
+
 

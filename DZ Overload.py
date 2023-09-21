@@ -64,12 +64,12 @@ class Clock:
 
 c1 = Clock(600)
 c2 = Clock(200)
-c8 = c9 = c10 = Clock(600)
 c3 = c1 + c2
 c4 = c1 - c2
 c5 = c1 * c2
 c6 = c1 // c2
 c7 = c1 % c2
+c8 = c9 = c10 = Clock(600)
 c8 -= c1 - c2
 c9 *= c1 * c2
 c10 //= c1 // c2

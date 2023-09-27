@@ -70,7 +70,7 @@ c5 = c1 * c2
 c6 = c1 // c2
 c7 = c1 % c2
 c8 = c9 = c10 = Clock(600)
-c8 -= c1 - c2
+c1 -= c8
 c9 *= c1 * c2
 c10 //= c1 // c2
 c11 = c1.get_format_time()
@@ -83,7 +83,7 @@ print("c1 - c2: ", c4.get_format_time())
 print("c1 * c2: ", c5.get_format_time())
 print("c1 // c2: ", c6.get_format_time())
 print("c1 % c2: ", c7.get_format_time())
-print("c1 -= c2: ", c8.get_format_time())
+print("c1 -= c2: ", c1.get_format_time())
 print("c1 *= c2: ", c9.get_format_time())
 print("c1 //= c2: ", c10.get_format_time())
 

@@ -28,7 +28,7 @@ def write_json(person_dict):
     except FileNotFoundError:
         data = {}
 
-    data.update({random.randrange(0, 1000, 1): person_dict})
+    data.update({random.randrange(0, 10**6): person_dict})
     with open('persons.json', 'w') as f:
         json.dump(data, f, indent=2)
 

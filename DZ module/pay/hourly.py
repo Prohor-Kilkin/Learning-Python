@@ -12,6 +12,6 @@ class HourlyEmployee(employee.Employee):
         return self.hours_worked * self.hour_rate
 
 
-if __name__ == '__main__':
-    s = HourlyEmployee(1, "qwerty", 50, 25)
-    print(s.calculate())
+# if __name__ == '__main__':
+#     s = HourlyEmployee(1, "qwerty", 50, 25)
+#     print(s.calculate())

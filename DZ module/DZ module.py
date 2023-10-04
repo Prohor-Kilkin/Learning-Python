@@ -1,8 +1,4 @@
-import commission
-import employee
-import hourly
-import salary
-import payroll
+from pay import salary, hourly, commission, payroll, employee
 
 
 salary = salary.SalaryEmployee(1, 'Валерий Задорожный', 1500)

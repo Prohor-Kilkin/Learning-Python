@@ -11,6 +11,6 @@ class SalaryEmployee(employee.Employee):
         return self.weekly_salary
 
 
-if __name__ == '__main__':
-    s = SalaryEmployee(1, "qwerty", 50)
-    print(s.calculate())
+# if __name__ == '__main__':
+#     s = SalaryEmployee(1, "qwerty", 50)
+#     print(s.calculate())

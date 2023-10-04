@@ -12,6 +12,6 @@ class CommissionEmployee(salary.SalaryEmployee):
         return fixed + self.commission
 
 
-if __name__ == '__main__':
-    s = CommissionEmployee(1, "qwerty", 50, 800)
-    print(s.calculate())
+# if __name__ == '__main__':
+#     s = CommissionEmployee(1, "qwerty", 50, 800)
+#     print(s.calculate())

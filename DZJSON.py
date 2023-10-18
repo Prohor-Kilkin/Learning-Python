@@ -36,7 +36,6 @@ class Countries:
 
 
 while True:
-
     print("*" * 30)
     print('''Выбор действия:
             1- Добавление данных

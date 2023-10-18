@@ -68,10 +68,10 @@
 # row = soup.find("div", id="whois3").find_previous_sibling()
 # print(row)
 
-import requests
-from bs4 import BeautifulSoup
-
-r = requests.get("https://www.wildberries.ru/catalog/0/search.aspx?search=кроссовки%20мужские").text
-html = BeautifulSoup(r, "lxml")
-print(html)
+# import requests
+# from bs4 import BeautifulSoup
+#
+# r = requests.get("https://www.wildberries.ru/catalog/0/search.aspx?search=кроссовки%20мужские").text
+# html = BeautifulSoup(r, "lxml")
+# print(html)
 

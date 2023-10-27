@@ -34,8 +34,13 @@ class Parser:
     def save(self):
         with open(self.path, "a", encoding="utf-8") as f:
             for item in self.data:
-                for key in item:
-                    f.write(f"{item[key]}\n")
+                f.write(item.get("Квартира"))
+                f.write(item.get("Адрес:").lstrip())
+                f.write("\n")
+                f.write(item.get("Цена:"))
+
+
+
 
 
 

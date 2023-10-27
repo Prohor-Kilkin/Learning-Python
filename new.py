@@ -75,3 +75,29 @@
 # html = BeautifulSoup(r, "lxml")
 # print(html)
 
+import sqlite3
+
+# con = sqlite3.connect("profile.db")
+# cur = con.cursor()
+#
+# cur.execute("""
+# """)
+# con.close()
+
+# with sqlite3.connect("profile.db") as con:
+#     cur = con.cursor()
+#     # cur.execute("""CREATE TABLE IF NOT EXISTS users(
+#     # id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     # name TEXT NOT NULL,
+#     # summ REAL,
+#     # data BLOB)""")
+#     cur.execute("DROP TABLE users")
+
+# with sqlite3.connect("users.db") as con:
+#     cur = con.cursor()
+#     cur.execute("""CREATE TABLE IF NOT EXISTS users(
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL,
+#     data BLOB NOT NULL DEFAULT "+79090000000"
+#     )""")
+    

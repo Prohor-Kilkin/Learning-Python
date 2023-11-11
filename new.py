@@ -75,7 +75,7 @@
 # html = BeautifulSoup(r, "lxml")
 # print(html)
 
-import sqlite3
+# import sqlite3
 
 # con = sqlite3.connect("profile.db")
 # cur = con.cursor()
@@ -100,4 +100,12 @@ import sqlite3
 #     name TEXT NOT NULL,
 #     data BLOB NOT NULL DEFAULT "+79090000000"
 #     )""")
-    
+# import sqlite3
+#
+# try:
+#     con = sqlite3.connect("car.db")
+#     cur = con.cursor()
+#     cur.executescript("""
+#     CREATE TABLE IF NOT EXISTS cars(
+#     car_id""")
+from jinja2 import Template

@@ -109,3 +109,36 @@
 #     CREATE TABLE IF NOT EXISTS cars(
 #     car_id""")
 from jinja2 import Template
+# cars = [
+# {'model': 'Audi', 'price': 23000},
+# {'model': 'Skoda', 'price': 17300},
+# {'model': 'Renault', 'price': 44300},
+# {'model': 'Wolksvagen', 'price': 21300}
+# ]
+#
+# # tpl = "{{(cs | min(attribute='price')).model}}"
+# # tpl = "{{cs | sort(attribute='model')}}"
+# tpl = "{{cs | random}}"
+# tm = Template(tpl)
+# msg = tm.render(cs=cars)
+# print(msg)
+
+
+# html = """
+# {%macro input_text(name, value='', type='text', size=20) -%}
+#     <input type="{{ type }}" name="{{ name }} value="{{ value }}" size="{{ size }}">
+#
+#
+# {%- endmacro%}
+#
+# <p>{{input_text('username', '')}}</p>
+# <p>{{input_text('email')}}</p>
+# <p>{{input_text('password')}}</p>
+# """
+#
+#
+# tm = Template(html)
+# msg = tm.render()
+# print(msg)
+
+from flask import Flask

@@ -1,0 +1,10 @@
+{% include "header.html" %}
+    <h1>{{ text }}</h1>
+
+<ul>
+    {% for i in cars -%}
+       <li>{{ i.model }}</li>
+    {% endfor %}
+</ul>
+    <p>{{ text1 }}</p>
+{% include "footer.html" %}

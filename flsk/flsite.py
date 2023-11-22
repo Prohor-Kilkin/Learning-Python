@@ -2,9 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-menu = [{"name": "Главная", "url": "index"}
-        {"name": "О нас", "url": "about"}
-        {"name": "Обратная связь", "url": "contact"}]
+menu = [{"name": "Главная", "url": "index"},
+        {"name": "Товары", "url": "goods"},
+        {"name": "О нас", "url": "about"}]
 
 
 @app.route("/")
@@ -13,9 +13,14 @@ def index():
     return render_template("index.html", title="Главная", menu=menu)
 
 
+@app.route("/goods")
+def goods():
+    return render_template("goods.html", title="Товары", menu=menu)
+
+
 @app.route("/about")
 def about():
-    return render_template("about.html", title="О нас")
+    return render_template("about.html", title="О нас", menu=menu)
 
 
 if __name__ == '__main__':

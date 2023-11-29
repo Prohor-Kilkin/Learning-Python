@@ -1,9 +1,77 @@
 body{
-     background-color:rgb(123, 159, 153) ;
+     background-color:rgb(160, 173, 245) ;
 }
 
 .menu{
+    display: flex;
     font-size: 20px;
-    color: rgb(79, 60, 48);
+    color: rgb(214, 102, 33);
+    justify-content: space-around;
+    list-style: none;
+    padding:25px;
+    background-color: rgb(223, 102, 239);
+    border-style: dashed;
+    border-color: rgb(61, 26, 26);
 }
 
+h1{
+    text-align: center;
+}
+
+.form{
+   font-style: oblique;
+}
+
+.list_of_goods{
+    display: flex;
+    float: left;
+    margin-top: 100px;
+    margin: 15px;
+    height: 160px;
+    width: 300px;
+    
+    
+}
+
+ul{
+    list-style: none;
+    border: 3px solid red;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: cyan;
+    
+}
+
+ul:hover{
+    box-shadow: 2px 2px 10px 6px;
+}
+
+a:hover{
+   cursor: pointer;
+   border-color: rgb(61, 26, 26) ; 
+}
+
+#add{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+#add:hover{
+    color: #c02424; 
+}
+
+#href{
+   display: flex;
+   height: 80px;
+   width: 250px;
+   margin: 25px auto;
+}
+
+#href:hover{
+    border: 3px solid;
+    border-color: blue;
+    border-radius: 15px;
+    background-color: coral;
+         
+}

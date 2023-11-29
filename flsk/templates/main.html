@@ -8,9 +8,9 @@
 <body>
 {% block content %}
     {% block menu %}
-    <ul >
+    <ul class="menu" >
         {% for i in menu %}
-        <li ><a class="menu" href="{{ i.url }}">{{ i.name }}</a></li>
+        <li ><a  href="{{ i.url }}">{{ i.title }}</a></li>
         {% endfor %}
     </ul>
     {% endblock %}

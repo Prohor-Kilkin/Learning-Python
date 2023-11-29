@@ -2,5 +2,15 @@
 
 {% block content %}
 {{ super() }}
-<h1>Здесь будет список товаров</h1>
+<div id="href"><a id="add" href="add_goods">Добавление товара</a></div>
+
+{% for item in goods %}
+<div class="list_of_goods">
+    <ul>
+        <li>Название: {{item.title}}</li>
+        <li>Цена: {{item.price}}</li>
+
+    </ul>
+</div>
+{% endfor %}
 {% endblock %}

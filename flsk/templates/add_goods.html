@@ -1,0 +1,15 @@
+{% extends 'goods.html' %}
+
+{% block content %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{ cat }}">{{ msg }}</div>
+{% endfor %}
+<h1>Добавление товара</h1>
+<form class="form" action="{{ url_for('add_goods') }}" method="post">
+    <p>Название:<input type="text" name="title"></p>
+    <p>Цена:<input type="text" name="price"></p>
+    <p><input type="submit" value="Подтвердить"></p>
+
+</form>
+{% endblock %}

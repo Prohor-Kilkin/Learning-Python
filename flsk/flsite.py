@@ -1,17 +1,14 @@
 import sqlite3
 import os.path
-from flask import Flask, render_template, url_for, request, flash, session, redirect, g
+from flask import Flask, render_template, request, flash, g
 from flsk.FDataBase import FDataBase
 
 
-# конфигурация
 DATABASE = 'flsk.db'
 DEBUG = True
-SECRET_KEY = '0db86ef0ec9d25d571de11184e5cb0e93725d077'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-# app.config['SECRET_KEY'] = 'wettrt44gfgjfnj123hkjk454kljklgfg4564'
 
 app.config.update(dict(DATABASE=os.path.join(app.root_path, "flsk.db")))
 
@@ -28,12 +25,6 @@ def create_db():
         db.cursor().executescript(f.read())
     db.commit()
     db.close()
-
-
-menu = [{"name": "Главная", "url": "index"},
-        {"name": "Товары", "url": "goods"},
-        {"name": "О нас", "url": "about"}
-        ]
 
 
 def get_db():

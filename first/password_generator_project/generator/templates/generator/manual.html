@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Инструкция</title>
+    <link rel="stylesheet" href="{% static 'css/manual_style.css' %}">
+</head>
+<body>
+    <div id="manual">
+        <p>1. Выберите количество символов в пароле.</p>
+        <p> 2. Укажите наличие или отсутствие спецсимволов, цифр. Переключите регистр.</p>
+        <p>3. Нажмите "Сгенерировать пароль".</p>
+        <p><a href="{% url 'home' %}">Вернуться на главную</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(164, 119, 119);
+}
+
+.img{
+    margin: 10 auto;
+   border: blanchedalmond solid 4px;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p, h2{
+    padding: 20px;
+}
+
+

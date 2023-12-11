@@ -5,7 +5,6 @@ class Model:
             self.author = author
             self.pages = pages
 
-
         def __str__(self):
             return f"{self.title} ({self.author})"
 

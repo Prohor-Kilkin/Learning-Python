@@ -10,3 +10,4 @@ class Controller:
 
 def run():
     while self.view.user_input() != "q":
+        main()

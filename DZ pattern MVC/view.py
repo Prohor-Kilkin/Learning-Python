@@ -1,4 +1,5 @@
 class View:
+
     def user_input(self):
         print('Редактирование данных каталога фильмов'.center(50, "="))
         print(f"Действия с фильмами:"

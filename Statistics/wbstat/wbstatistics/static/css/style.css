@@ -1,0 +1,42 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+
+.menu{
+    background: #003366;
+    box-shadow: 0 2px 12px 2px #003366;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.menu .logo{
+    margin-right: 30%;
+    color: #fff;
+
+}
+
+.menu a{
+    color: #FFF;
+}
+
+a{
+    text-decoration: none;
+}

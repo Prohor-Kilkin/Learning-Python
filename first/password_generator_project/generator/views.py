@@ -7,7 +7,7 @@ import random
 
 def home(request):
     lst = list(range(6, 15))
-    return render(request, 'generator/home.html', {"lst": lst})
+    return render(request, 'generator/userpage.html', {"lst": lst})
 
 
 def password(request):
